@@ -78,3 +78,4 @@ int scan(){
 	scanf("%d", &input);
 	return input;
 }
+// dddd
