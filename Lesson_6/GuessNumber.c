@@ -25,40 +25,36 @@ int scan(){
 	return input;
 }
 
+        // printf("Please enter num behind %d and %d\n", x, y);
 
 int isInRange(int secretNum, int num, int x, int y, int a){
 
-    while (num != secretNum){
-
-
-        if (num < x || num > y){
-            printf("Please enter num behind %d and %d\n", x, y);
-        } 
-
-        else if (num > secretNum){
-            printf("The number is too big! Try again\n");
-            a = a - 1; 
-            printf("Attachment %d\n", a);
-            
-        } 
-
-        else {
-            printf("The number is too small! Try again\n");
-            a = a - 1;    
-            printf("Attachment %d\n", a);
-        }
-
-    }
+    while(num > x || num < y){
+		printf("You have %d attempts\n", a);
+		fflush(stdout);
+		scanf("%d", &num);
+		a--;
+	if(num == secretNum){
+		printf("YOU WON!!!"); break;
+	}else if(a == 0){
+		printf("YOU LOST!!!"); break;
+	}else if(num < x || num > y){
+		printf("Please, enter a number from %d to %d\n", x, y);
+	}else if(num > secretNum){
+		printf("The number is too big! Try again!\n");
+	}else if(num < secretNum){
+		printf("The number is too small! Try again!\n");
+	}
+}
+        return 0;
           
-          
-          
-          
-
-            printf("You won!\n");
-        
-        return 1;
-
 }  
+          
+          
+          
+
+        
+
 
 
 
