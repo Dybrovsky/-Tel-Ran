@@ -37,7 +37,7 @@ int binarySearch(int arr[], int number, int size){
     return left <= right ? middle : -1;
 }
 /*
-            left  middle  right
+            left  middle  right 
 int arr[] = {0, 1, 2, 3, 4, 8, 9};
 
 
