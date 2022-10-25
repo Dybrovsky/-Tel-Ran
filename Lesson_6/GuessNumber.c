@@ -29,7 +29,7 @@ int scan(){
 
 int isInRange(int secretNum, int num, int x, int y, int a){
 
-    while(num > x || num < y){
+    while(num > x && num < y){
 		printf("You have %d attempts\n", a);
 		fflush(stdout);
 		scanf("%d", &num);

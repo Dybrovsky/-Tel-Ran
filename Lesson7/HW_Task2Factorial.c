@@ -8,12 +8,18 @@
 #include <stdio.h>
 int factorial(int number);
 int scan();
-  int main()
-  {
+
+  int main(){
      int number;
      printf("Enter factorial\n");
      number = scan();
+     if (number > 1 && number < 9)
+     {
      factorial(number);
+     } else 
+     {
+      printf("Choose number between 1 and 9");
+     }
   }
 
   int factorial(int number){

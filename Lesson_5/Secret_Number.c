@@ -14,7 +14,7 @@
 #include <time.h>
 
 int function2(int num, int secretNumber);
-int validateNumber(int num, int secretNumber);
+int validateNumber(int num, int secretNumber, int x);
 int randomizer();
 
 int main()
@@ -23,17 +23,23 @@ int main()
 	int secretNumber = randomizer();
     printf("Secret = %d\n", secretNumber);
 	int num;
+
+	printf("x\n");
+    int x;
+    fflush(stdout);
+	scanf("%d", &x);
+    validateNumber(num, secretNumber, x);
     
 	printf("Enter your number from 0 to 9:\n");
 
 	fflush(stdout);
 	scanf("%d", &num);
-    validateNumber(num, secretNumber);
+    validateNumber(num, secretNumber, x);
     return 0;
 }
-int validateNumber(num, secretNumber){
+int validateNumber(num, secretNumber, x){
 
-    if (num < 0 || num > 9)
+    if (num < x || num > 9)
         {
             printf("Enter correct number!\n");
             main();
@@ -50,10 +56,11 @@ int function2(num, secretNumber){
         printf("Congratulations!\n");
    } else {
         printf("Try again\n");
-       return main();    
+        main();    
 }
 }
 
 int randomizer(){
     return rand()%10; //random value from [0 to 9]
 }
+

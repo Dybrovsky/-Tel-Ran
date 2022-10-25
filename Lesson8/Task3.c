@@ -21,7 +21,7 @@ int main(){
     int arr[] = {1, 2, 3, 4, 5};
     int fromSize = 5;
     int arr2[] = {0};
-    int toSize = 5;
+    int toSize = 9;
 
 
     copyArr(arr, fromSize, arr2, toSize);

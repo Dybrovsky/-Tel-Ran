@@ -9,28 +9,20 @@
 
 #include <stdio.h>
 int XpowerY(int x, int y);
-  int main()
-  {
+  int main(){
+    XpowerY(2, 3);
+}
 
-XpowerY(2, 3);
-
-  }
 int XpowerY(int x, int y){
-
- 
  if (x >= 1 && x <= 9 && y >= 1 && y <= 9){
 
     int i;
     int res = x;
-    for (i = 1; i < y; i++)
-    {
+    for (i = 1; i < y; i++){
         res = res * x;
     }
         printf("%.d\n", res);
     return res;
-
-
-
 
  } else {
     printf("Not in range\n");
