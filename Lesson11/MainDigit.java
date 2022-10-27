@@ -4,6 +4,9 @@ public class MainDigit {
 
         int number = 43214321;
         System.out.println("Your control digit is " + countDigit(number));
+        String num = "43214321";
+        number = Integer.parseInt(num);
+        System.out.println("Your control digit is " + countDigit(number));
 
     }
 
