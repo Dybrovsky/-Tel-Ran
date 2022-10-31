@@ -4,13 +4,13 @@
 public class myToString {
     public static void main(String[] args) {
 
-        char[] input = new char[] { 'H', 'e', 'l', 'l', 'o' };
-        String result = "";
-        for (int i = 0; i < input.length; i++) {
-            result = result + input[i];
+        char[] ar = { 'H', 'e', 'l', 'l', 'o' };
+        System.out.println(myToString(ar));
 
-        }
-        System.out.println(result);
+    }
 
+    static String myToString(char[] ar) {
+
+        return String.valueOf(ar);
     }
 }
