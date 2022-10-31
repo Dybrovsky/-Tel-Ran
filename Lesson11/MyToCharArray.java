@@ -5,16 +5,25 @@ public class MyToCharArray {
 
     public static void main(String[] args) {
 
-        String str = "Hello";
-        char[] result = new char[str.length()];
+        String s = "Hello";
+        printArray(toCharAr(s));
 
-        for (int i = 0; i < str.length(); i++) {
-            result[i] = str.charAt(i);
+    }
+
+    static void printArray(char[] ch) {
+        for (int i = 0; i < ch.length; i++) {
+            System.out.println(ch[i]);
         }
-        for (char c : result) {
-            System.out.println(c);
 
+    }
+
+    static char[] toCharAr(String str) {
+
+        char[] ch = new char[str.length()];
+
+        for (int i = 0; i < ch.length; i++) {
+            ch[i] = str.charAt(i);
         }
-
+        return ch;
     }
 }

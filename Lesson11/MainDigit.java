@@ -8,6 +8,8 @@ public class MainDigit {
         number = Integer.parseInt(num);
         System.out.println("Your control digit is " + countDigit(number));
 
+        String card = "123456781234567"; // control digit?
+
     }
 
     static int countDigit(int num) {
