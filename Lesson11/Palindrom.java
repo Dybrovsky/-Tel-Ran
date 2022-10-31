@@ -3,17 +3,18 @@
 
 public class Palindrom {
     public static void main(String[] args) {
-
-        String input = "level";
-        String check = "";
-
-        int l = input.length();
-
-        for (int i = 0; i < l; i++) {
-            check = check + input.charAt(i);
-        }
-        // System.out.println(check);
-
-        System.out.println(input.equalsIgnoreCase(check));
+        String s = "Level";
+        System.out.println(isPalindrome(s));
     }
+
+    static boolean isPalindrome(String s) {
+
+        s = s.toLowerCase();
+        for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
+            if (s.charAt(i) != s.charAt(j))
+                return false;
+        }
+        return true;
+    }
+
 }
