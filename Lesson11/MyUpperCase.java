@@ -1,5 +1,3 @@
-import javax.sql.rowset.spi.SyncResolver;
-
 // Task 3
 
 // Написать свой собственный метод myUpperCase(), переводящий символы строки в верхний регистр,
@@ -11,17 +9,32 @@ public class MyUpperCase {
     public static void main(String[] args) {
 
         String str = "hello";
-        char[] tempAr = str.toCharArray();
-        String result = "";
+        System.out.println(myUpperCase(str));
+        // char[] tempAr = str.toCharArray();
+        // String result = "";
 
-        // System.out.println(tempAr);
-        for (int i = 0; i < tempAr.length; i++) {
-            int code = tempAr[i] - 32;
-            result = result + Character.toString(code);
-        }
-        System.out.println(result);
+        // // System.out.println(tempAr);
+        // for (int i = 0; i < tempAr.length; i++) {
+        // int code = tempAr[i] - 32;
+        // result = result + Character.toString(code);
+        // }
+        // System.out.println(result);
 
         // System.out.println();
+    }
+
+    static String myUpperCase(String str) {
+
+        // String res = "";
+        for (int i = 0; i < str.length(); i++) {
+
+            char oldChar = str.charAt(i);
+            char newChar = (char) (oldChar - ('a' - 'A')); /* !!!! casting */
+            if (oldChar >= 'A' && oldChar <= 'Z')
+                continue;
+            str = str.replace(oldChar, newChar);
+        }
+        return str;
 
     }
 
