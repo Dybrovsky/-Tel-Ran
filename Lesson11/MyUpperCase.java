@@ -8,8 +8,8 @@ public class MyUpperCase {
 
     public static void main(String[] args) {
 
-        String str = "hello";
-        System.out.println(myUpperCase(str));
+        String s = "hello world";
+        System.out.println(myUpperCase(s));
         // char[] tempAr = str.toCharArray();
         // String result = "";
 
@@ -30,9 +30,10 @@ public class MyUpperCase {
 
             char oldChar = str.charAt(i);
             char newChar = (char) (oldChar - ('a' - 'A')); /* !!!! casting */
-            if (oldChar >= 'A' && oldChar <= 'Z')
+            if (oldChar >= 'A' && oldChar <= 'Z' || oldChar == ' ')
                 continue;
             str = str.replace(oldChar, newChar);
+            // System.out.println(str);
         }
         return str;
 
