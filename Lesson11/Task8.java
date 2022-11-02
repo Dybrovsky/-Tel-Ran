@@ -27,31 +27,29 @@
 // б) Проверка на то, что минуты не отрицательны и не больше 59.
 public class Task8 {
 
-    static double time = 16.20;
+    static double gmt = 16.20;
 
     public static void main(String[] args) {
 
-        double country1 = time;
-        double country2 = time + 8;
-        watcher1();
-        // double res = (time24to12Hours(time));
-        // System.out.printf("%.2f\n", res);
-    }
+        System.out.printf("res = %.2f\n", 0.1 + 0.2);
 
-    public static double watcher1() {
-        return country1;
-    }
+        double country1 = watcher1();
+        if (country1 < 12) {
 
-    // System.out.printf("%.2f\n", country1);
-
-    public static double time24to12Hours(double time) {
-        double result;
-
-        if (time <= 12) {
-            result = time;
+            System.out.printf("%.2f AM\n", country1);
         } else {
-            result = time - 12;
+            System.out.printf("%.2f PM\n", country1);
         }
-        return result;
     }
+
+    static double watcher1() {
+
+        double time = gmt - 5;
+
+        if (gmt > 12.00) {
+            time = time - 12;
+        }
+        return time;
+    }
+
 }
