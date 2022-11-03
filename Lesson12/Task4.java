@@ -9,46 +9,32 @@
 public class Task4 {
 
     public static void main(String[] args) {
-
+        int ar[] = { 9, 2, 7, 1, 4, 5, 3 };
+        sortBubbleEvenOdd(ar);
     }
 
-    public static void sortBubbleEvenOdd(int[] mas) {
+    public static void sortBubbleEvenOdd(int[] ar) {
+        int tmp = 0;
+        boolean flag = false;
 
-        for (int i = 0; i < (mas.length - 1); i++) {
-            for (int j = 0; j < (mas.length - 1); j++) {
+        do {
+            flag = false;
+            for (int i = 0; i < ar.length - 1; i++) {
 
-                // Расстановка по чётности
-                if ((mas[j] % 2 == 1) && (mas[j + 1] % 2 == 0)) {
-                    // swap
-                    int buff = mas[j];
-                    mas[j] = mas[j + 1];
-                    mas[j + 1] = buff;
+                if ((ar[i] > ar[i + 1]) && (ar[i] % 2 != 0)) {
+                    tmp = ar[i + 1];
+                    ar[i + 1] = ar[i];
+                    ar[i] = tmp;
+                    flag = true;
                 }
 
-                // Расстановка чётных по возрастнаию
-                if ((mas[j] % 2 == 0) && (mas[j + 1] % 2 == 0)) {
-                    if (mas[j] > mas[j + 1]) {
-                        // swap
-                        int buff = mas[j];
-                        mas[j] = mas[j + 1];
-                        mas[j + 1] = buff;
-                    }
-                }
-
-                // Расстановка нечётных по возрастнаию
-                if ((mas[j] % 2 == 1) && (mas[j + 1] % 2 == 1)) {
-                    if (mas[j] > mas[j + 1]) {
-                        // swap
-                        int buff = mas[j];
-                        mas[j] = mas[j + 1];
-                        mas[j + 1] = buff;
-                    }
-                }
             }
         }
 
-        for (int i = 0; i < mas.length; i++) {
-            System.out.print(mas[i] + " ");
+        while (flag);
+
+        for (int i = 0; i < ar.length; i++) {
+            System.out.print(ar[i] + " ");
         }
     }
 

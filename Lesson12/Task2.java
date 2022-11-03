@@ -44,3 +44,25 @@ public class Task2 {
 
   }
 }
+
+
+// public class MainHW12Task2Matrix {
+
+// 	public static void main(String[] args) {
+		
+// 		char letter = 0;
+				
+// 		for (int i = 0; i < 5; i++) {
+// 			for (int j = 0; j < 5; j++) {
+				
+// 				letter = (char) ((int)(Math.random()*((90-65)+1))+65); // получаем рандомное число от 65 до 90 и приводим его к Чар
+// 				System.out.printf("%c ", letter);			
+				
+// 			}
+// 			System.out.printf("\n");
+// 		}
+			
+
+// 	}
+
+// }
