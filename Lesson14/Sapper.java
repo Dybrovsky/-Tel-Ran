@@ -40,7 +40,6 @@ public class Sapper {
             x = scan.nextInt();
             y = scan.nextInt();
 
-
             while (!(x <= a && y <= b)) { // while not in range do that ->
 
                 System.out.println("Enter number in range ");
@@ -51,21 +50,24 @@ public class Sapper {
             }
 
             if (field[x][y] == 1) {
-                
+
                 System.out.println("Boom!!!");
-                
+
                 inputAttempt = 0;
-            } else if (field[x][y] == 0){
-                
+            } else if (field[x][y] == 0) {
+
                 System.out.println("Try again!");
                 field[x][y] = 2;
                 inputAttempt--;
                 System.out.println("Attempts  " + inputAttempt);
-            } else if (field[x][y] == 2){
-                System.out.println("3333");
-        }
-        System.out.println("End of the game");
+            } else if (field[x][y] == 2) {
+                System.out.println("Dont repeat yourself!");
+            } else {
 
+                System.out.println("End of the game");
+            }
+
+        }
         scan.close();
     }
 }
