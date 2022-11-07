@@ -27,7 +27,7 @@ public class Sapper {
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field.length; j++) {
                 field[i][j] = (char) (Math.random() * 2);
-                System.out.print(field[i][j] + " ");
+                System.out.print("X" + " ");
             }
             System.out.println();
         }
@@ -40,7 +40,7 @@ public class Sapper {
             x = scan.nextInt();
             y = scan.nextInt();
 
-            while (!(x <= a && y <= b)) { // while not in range do that ->
+            while (!(x < a && y < b)) { // while not in range do that ->
 
                 System.out.println("Enter number in range ");
                 System.out.println("Attempts  " + inputAttempt);
