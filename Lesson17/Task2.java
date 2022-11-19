@@ -15,7 +15,7 @@ public class Task2 {
         tempArray.add('B');
         tempArray.add('A');
 
-        for (var i = 0; i < tempArray.size(); i++) {
+        for (int i = 0; i < tempArray.size(); i++) {
             Character tempChar = tempArray.get(i);
 
             if (!letters.containsKey(tempChar)) {
@@ -25,7 +25,7 @@ public class Task2 {
             }
         }
         for (Map.Entry<Character, Integer> entry : letters.entrySet()) {
-            System.out.println("Буква = " + entry.getKey() + ", Повторений = " + entry.getValue());
+            System.out.println(entry.getKey() + " = " + entry.getValue());
         }
 
     }
