@@ -12,6 +12,7 @@ public class task3 {
         list1.toArray();
         list2.toArray();
 
+        
         for (int i = 0; i < str1.length(); i++) {
             char c = str1.charAt(i);
             list1.add(c);
