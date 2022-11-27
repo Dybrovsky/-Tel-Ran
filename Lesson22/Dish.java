@@ -1,29 +1,18 @@
 
-import java.util.*;
-
 public class Dish implements Comparable<Dish> {
 
     private String name;
     private double price;
     private double weight;
     private int calories;
-    private int id;
 
-    public Dish(String name, double price, double weight, int calories, int id) {
+    public Dish(String name, double price, double weight, int calories) {
         super();
         this.name = name;
         this.price = price;
         this.weight = weight;
         this.calories = calories;
-        this.id = id;
-    }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -68,7 +57,8 @@ public class Dish implements Comparable<Dish> {
 
     @Override
     public int compareTo(Dish o) {
-        return Integer.compare(this.id, o.id);
+        return this.getName().compareToIgnoreCase(o.getName());
+
     }
 
 }

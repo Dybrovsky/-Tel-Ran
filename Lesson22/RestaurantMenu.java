@@ -79,13 +79,100 @@ public class RestaurantMenu {
                 + "\nOur location: " + location
                 + "\nOur dishes: " + dishes
         );
-//		for(Dish d : dishes) {
-//			System.out.println(d.getName());
-//		}
+        for (Dish d : dishes) {
+            System.out.println(d);
+        }
         System.out.println("==============================");
     }
 
-//    public void saveMenuToFile(String folderPath) 
+    public void saveMenuToFile(String folderPath) {
+
+        String fileName = this.getRestaurantName() + ".txt";
+
+        File folder = new File(folderPath);
+
+        if (folder.exists() == false) {
+            folder.mkdirs();
+        }
+
+        String filePath = folderPath + "/" + fileName;
+
+        File file = new File(filePath);
+
+        if (file.exists() == false) {
+            try {
+                file.createNewFile();
+
+                FileWriter fw = new FileWriter(file);
+                BufferedWriter bw = new BufferedWriter(fw);
+
+                for (Dish d : dishes) {
+                    String toFile = d.getName() + "; "
+                            + " price " + d.getPrice() + "; "
+                            + " weight " + d.getWeight() + "; "
+                            + " calories " + d.getCalories();
+                    bw.write(toFile);
+                    bw.newLine();
+                }
+                bw.close();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    public void readMenuFromFile(String folderPath) {
+        File folder = new File(folderPath);
+
+        if (folder.exists() == false) {
+            System.out.println("pam param pam - noyp!");
+        }
+
+        String filePath = folderPath + "/" + this.getRestaurantName() + ".txt";
+
+        File file = new File(filePath);
+
+        if (file.exists() != false) {
+            System.out.println("Noyp, no file!");
+            return;
+        }
+        try {
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+
+            while (true) {
+                String line = br.readLine();
+                if (line == null) {
+                    break;
+                }
+
+                String[] arr = line.split("; ");
+                String name = arr[0];
+                double price = Double.parseDouble(arr[1]);
+                double weight = Double.parseDouble(arr[2]);
+                int calories = Integer.parseInt(arr[3]);
+
+                Dish d = new Dish(name, price, weight, calories);
+
+                this.addDish(d);
+
+            }
+            br.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+//		  
+        for (Dish d : dishes) {
+            System.out.println(d);
+        }
+
+    }
+
+}
+
 //    public void readMenuFromFile(String folderPath)
 //    fileName - restaurantName +".txt"
-}
+
