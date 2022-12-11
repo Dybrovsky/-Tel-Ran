@@ -1,0 +1,54 @@
+.container{
+    background-image:url("../img/bg-image.png");
+    height: 100vw;
+
+}
+
+.table
+,td
+,tr {
+    outline: 1px solid gray ;
+}
+
+td{
+    text-align: center;
+}
+
+.logo{
+    width: 500px;
+
+}
+
+.main{
+    background-color: white;
+    text-align: center;
+    width: 50vw;
+}
+.header  {
+    background-color: #B9B9B9;
+}
+
+.sub_button{
+    background-color: #FF9900;
+    border-radius: 5px;
+    font-size: 30px;
+    color: white;
+    width: 250px;
+    height: 50px;
+}
+
+.img_bottom{
+    width: 200px;
+    text-align: justify;
+
+}
+.img_bottom_color{
+    background-color: green;
+}
+
+#email{
+    border-color: green;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+}
