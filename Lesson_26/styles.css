@@ -1,0 +1,77 @@
+@font-face {
+    font-family: lakeshore;
+    src: url("fonts/Airstream-webfont.svg");
+}
+
+body{
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+header{
+    height: 400px;
+    background-image: url("img/coffee-bgnd.jpeg");
+    background-position: center;
+    padding-top: 1px;
+}
+
+header>h1{
+    margin: 130px 0 0 0;
+    font-size: 100px;
+    text-align: center;
+    font-family: lakeshore, cursive;
+    color: rgba(3,150,100,0.75);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    margin: 10px 0;
+    border-bottom: 1px solid #e4bb97;
+    padding: 60px;
+}
+
+h2{
+    font-family: lakeshore, sans-serif;
+    font-weight: 680;
+    font-size: 28px;
+    background-color: #aa8eb5;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    color: #444f44;
+    font-size: 20px;
+    font-family: lakeshore, "Songti SC";
+    font-weight: 500;
+    text-align: justify;
+    text-indent: 32px;
+    padding: 0 5px;
+    line-height: 1.5;
+}
+
+a{
+    color: cadetblue;
+    font-family: lakeshore, Phosphate;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+a:visited{
+    color: greenyellow;
+}
+
+a:hover{
+    color: darkred;
+}
+
+a:active{
+    color: blue;
+}
