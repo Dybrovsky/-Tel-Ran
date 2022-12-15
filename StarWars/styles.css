@@ -1,27 +1,27 @@
-body{
+body {
     font-family: 'Poller One', cursive;
     background-image: url("images/sky.jpg");
-    background-attachment: fixed;
     color: whitesmoke;
+    background-attachment: fixed;
 }
 
-header{
-    background-color: rgba(60, 70, 70, 0.6);
+header {
+    background-color: rgba(60, 69, 67, 0.6);
     border-radius: 15px 15px 0 0;
 }
 
-nav>ul{
+nav > ul {
     list-style: none;
     position: fixed;
     top: 5px;
 }
 
-header>h1{
+header > h1 {
     text-align: center;
     padding: 1em 0;
 }
 
-nav li{
+nav li {
     display: inline;
     border: 2px solid black;
     border-radius: 5px;
@@ -29,54 +29,56 @@ nav li{
     cursor: pointer;
 }
 
-.left{
+.left {
     float: left;
     margin: 5px 15px 0 5px;
 }
 
-.right{
+.right {
+    border: whitesmoke 1px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     float: right;
-    margin: 5px 5px 0;
 }
 
-footer{
-    background-color: rgba(60, 70, 70, 0.6);
-    border-radius: 0 0 15px 15px ;
+.right div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 380px;
+    justify-content: center;
+    text-align: center;
+}
+
+.right h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(60, 69, 67, 0.6);
+    border-radius: 0 0 15px 15px;
     height: 4em;
     clear: both;
 }
 
-img{
-    box-shadow: rgba(120, 69, 67, 0.6) 10px 10px ;
+img {
+    box-shadow: rgba(120, 69, 67, 0.6) 10px 10px;
 }
 
-.right img{
+.right img {
     box-shadow: none;
     height: 120px;
     width: 160px;
 }
 
-.farGalaxy{
+.farGalaxy {
     font-size: 1.5em;
     text-align: justify;
     letter-spacing: 0.2em;
     line-height: 1.5;
 }
 
-.right table{
-    border: 1px solid whitesmoke;
-    border-radius: 0 0 15px 15px;
-}
-
-.bottom-left{
-    border-bottom-left-radius: 15px;
-}
-
-.bottom-right{
-    border-bottom-right-radius: 15px;
-}
-
-.button{
+.button {
     border: 2px solid white;
     border-radius: 5px;
     width: 9em;
@@ -85,14 +87,23 @@ img{
     cursor: pointer;
 }
 
-.button>p{
+.button > p {
     font-size: 0.8em;
     text-align: center;
     margin-top: 0.6em;
 }
 
-.email{
+.email {
     font-size: 1.2em;
     color: black;
     font-variant: small-caps;
 }
+
+
+
+
+
+
+
+
+
