@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header, nav{
+    background-color: darkgrey;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1{
+    /*outline: 1px solid green;*/
+    padding: 0.4em;
+    white-space: nowrap;
+    text-align: justify;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+
+
+}
+
+nav>ul>li{
+    margin: auto 10px;
+}
+
+#form {
+    background-color: darkgray;
+    padding: 1.6em;
+    /*outline: 1px green solid;*/
+    /*padding: 20px 0;*/
+    margin-left: 600px;
+}
+#query{
+    border-radius: 50px;
+    height: 2.2em;
+    padding: 10px;
+}
+
+.cart{
+    margin-top: 1.4em;
+    /*outline: 1px solid red;*/
+}
+.main_left{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-left_top{
+    padding-right: 50px;
+}
+.main-left_bottom>ul{
+    display: inline;
+
+}
+.main-left_bottom>ul>li{
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    color: darkgray;
+    display: inline;
+    padding: 10px;
+    margin: -2px;
+}
+
+.main-right>img:not(:first-child){
+margin-left: 3px;
+}
+
+.add_to_cart_button{
+    width: 150px;
+    color: whitesmoke;
+    background-color: darkgray;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin-top: 160px;
+    margin-left: 600px;
+}
+
+.container{
+    padding: 50px;
+    display: flex;
+}
+
+
+@media (max-width: 960px) {
+    #form{
+        display: none;
+    }
+
+    .cart{
+        margin: 10px;
+    }
+
+}
