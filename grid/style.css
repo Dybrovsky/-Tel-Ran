@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.row, .row1{
+    display: flex;
+    margin: 15px 0;
+}
+
+.row div{
+    height: 150px;
+    border: 1px solid crimson;
+    background-color: lightgray;
+    margin: 0 15px;
+    width: calc(100% / 12 - 30px);
+}
+
+/*.row1 div{*/
+/*    height: 150px;*/
+/*    border: 1px solid greenyellow;*/
+/*    background-color: #333;*/
+/*    color: whitesmoke;*/
+/*    margin: 0 15px;*/
+/*    width: calc(100% / 3 - 30px);*/
+/*}*/
+
+.col-1{
+    background-color: #333;
+    color: whitesmoke;
+    height: 150px;
+    margin: 15px 15px;
+    width: calc(100%/12 - 30px);
+}

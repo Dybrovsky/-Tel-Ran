@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+
+
+
+}
+
+.text{
+    background-color: darkorange;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    /*align-self: flex-start;*/
+
+}
+
+.date{
+    background-color: green;
+    /*align-self: flex-end;*/
+}
+
+/*.container:first-child{*/
+/*    align-self: flex-start;*/
+/*}*/
+
+/*.container:last-child{*/
+/*    align-self: flex-end;*/
+/*}*/
