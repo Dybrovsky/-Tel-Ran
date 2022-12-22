@@ -1,0 +1,17 @@
+body{
+    font-family: Georgia;
+}
+
+
+
+.headers {
+    background-image: url("img/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    color: #fd7e14;
+}
+
+footer, header{
+    background-color: coral;
+}

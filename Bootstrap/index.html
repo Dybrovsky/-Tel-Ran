@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .item{
+            height: 100px;
+            color: #0d6efd;
+            /*border: 1px solid black;*/
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Hello World!</h1>
+</div>
+<div class="container">
+    <div class="row bg-success">
+        <div class="item col-12 col-md-6 col-lg-3 bg-black rounded-circle" >Card1</div>
+        <div class="item col-12 col-md-6 col-lg-3 bg-danger rounded-pill">Card2</div>
+        <div class="item col-12 col-md-6 col-lg-3 bg-info">Card3</div>
+        <div class="item col-12 col-md-6 col-lg-3 bg-light">Card4</div>
+    </div>
+    <div class="row bg-success">
+        <div class="item col-md-6 col-lg-3 border border-2 border-danger">Item1</div>
+        <div class="item col-md-6 col-lg-3 text-danger text-opacity-50">Item2</div>
+        <div class="item offset-md-3 col-md-6 offset-lg-2 col-lg-3 text-warning">Item3</div>
+    </div>
+</div>
+</body>
+</html>
+

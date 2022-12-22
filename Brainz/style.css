@@ -1,0 +1,44 @@
+.brain {
+    width: 10%;
+    position: absolute;
+    animation-name: brainTrip;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+
+}
+
+@keyframes brainTrip {
+    from {
+        left: 40px;
+        bottom: 300px;
+    }
+    10%{
+        left: 1000px;
+
+    }
+    30%{
+        right: 200px;
+    }
+    40%{
+        right: 100px;
+        left: 30px;
+    }
+    50% {
+        left: 80px;
+        bottom: 600px;
+    }
+    70%{
+        left: 80px;
+        bottom: 400px;
+    }
+    90%{
+        left: 100px;
+        bottom: 100px;
+    }
+    50% {
+    }
+    to {
+        left: 80px;
+        bottom: 400px;
+    }
+}
