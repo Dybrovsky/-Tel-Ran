@@ -68,4 +68,8 @@ function calculation() {
 }
 
 
-calculation();
+// calculation();
+
+(function (name){
+    console.log('Hi' + name);
+})('Jack')
