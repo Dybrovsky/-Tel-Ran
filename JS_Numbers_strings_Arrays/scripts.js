@@ -154,6 +154,7 @@ array2[0] = 100500;
 console.log(array);
 
 array.splice(2, 0, 50, 60);
+console.log('!!!!!!!!!!!!');
 console.log(array);
 
 array.splice(2, 1);
