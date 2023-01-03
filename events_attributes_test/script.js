@@ -77,7 +77,7 @@ myInput3.removeAttribute('id');
 const wrap2 = document.querySelector('.wrapper2');
 wrap2.onclick = function (e){
     console.log(e.target.dataset);
-    console.log(e.target.dataset.width)
+    console.log(e.target.dataset.width) 
 }
 
 
