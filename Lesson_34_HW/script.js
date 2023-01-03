@@ -91,6 +91,29 @@ console.log(dst);
 // prst - >1
 // ab - >1
 
+let array = ['abc', 'lmn', 'abc', 'lmn','lmn', 'prst', 'ab'];
+
+function displayOccurrences(array) {
+let res = {};
+
+    // for (let word of array) {
+    //     if(res[word])
+    //         res[word]++
+    //     else
+    //         res[word] = 1
+    // }
+    //
+    array.forEach(function (word)
+    {
+        let count = res[word] || 0
+        res[word] = count + 1
+    })
+    for (let entry of Object.entries(res)) {
+        console.log(entry[0] + '->' + entry[1])
+    }
+}
+
+console.log(displayOccurrences(array));
 
 
 // Write function ulSurround that surrounds array of strings inside <ul></ul> element.

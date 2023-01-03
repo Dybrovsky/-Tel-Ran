@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" defer></script>
+    <title>Events & attributes</title>
+    <style>
+        .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+        li[data-mark = '5']{
+            background-color: mediumaquamarine;
+        }
+        li[data-mark = '3']{
+            background-color: green;
+        }
+        li[data-mark = '2']{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" class="myInput">
+<!--<button class="btn" onclick="console.log('click')">Click me!</button>-->
+<!--<button class="btn" onclick="show()">Click me!</button>-->
+<button class="btn">Click me!</button>
+
+<a href="www.google.com">Go to google</a>
+
+<input type="text" id="myInput2">
+
+<div class="wrapper">
+    <div class="box">
+        <button class="btn2">Click me</button>
+    </div>
+</div>
+
+<input type="text" value="hello" class="myInput3">
+
+
+<ol>
+    <li data-mark="5">Pasha</li>
+    <li data-mark="4">Sasha</li>
+    <li data-mark="3">Misha</li>
+    <li data-mark="2">Tosha</li>
+</ol>
+
+<div class="wrapper2">
+    <button class="btn3" data-weight = '100' data-my = 'my'>Click here</button>
+    <button class="btn3" data-weight = '200'>Click here2</button>
+</div>
+
+</body>
+</html>
