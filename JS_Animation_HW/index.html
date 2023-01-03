@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: deepskyblue;
+            text-align: center;
+            /*margin: 0 auto;*/
+            position: relative;
+        }
+
+        #animation-box{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            /*padding: 10px 5px;*/
+            position: absolute;
+
+        }
+        .chanded{
+            background-color: hotpink;
+            width: 60px;
+            height: 60px;
+            padding: 10px 5px;
+            position: absolute;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div id="animation-box">
+        <p id="text" onclick="animation()">animate me!</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
