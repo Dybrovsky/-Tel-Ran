@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
     $(document).on('click', '.newItem', function () {
         $(this).parent().remove();
-    });
+    }); 
 });
 
 
